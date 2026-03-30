@@ -1,14 +1,18 @@
 @font-face {
-    font-family: "Titillium Web";
-    src: url("../Fuentes/Titillium_Web/TitilliumWeb-Regular.ttf") format("truetype");
+    font-family: 'Titillium Web';
+    /* Cambia la ruta al nuevo archivo .woff2 */
+    src: url('../Fuentes/Titillium_Web/TitilliumWeb-Regular.woff2') format('woff2');
+    font-display: swap; /* Esto hace que el texto salga rápido con una letra básica mientras carga la pro */
 }
 @font-face {
     font-family: "drink";
-    src: url("../Fuentes/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    src: url("../Fuentes/Outfit/Outfit-VariableFont_wght.woff2") format("woff2");
+    font-display: swap;
 }
 @font-face {
     font-family: 'Quicksand';
-    src: url("../Fuentes/Quicksand/Quicksand-VariableFont_wght.ttf") format("truetype");
+    src: url("../Fuentes/Quicksand/Quicksand-VariableFont_wght.woff2") format("woff2");
+    font-display: swap;
 }
 :root {
     --color-principal-tom: #fa1010;
