@@ -236,18 +236,7 @@ header {
         transform-box: fill-box;
     }
     /* Eliminamos el hover que lo transformaba en X para que no confunda el estado del menú */
-    @media (hover: hover) {
-        .menu-icon:hover .bar-mid {
-            transform: scaleX(0);
-            opacity: 0;
-        }
-        .menu-icon:hover .bar-top {
-            transform: translateY(6px) rotate(45deg);
-        }
-        .menu-icon:hover .bar-bot {
-            transform: translateY(-6px) rotate(-45deg);
-        }
-    }
+    /* (Se eliminó la regla :hover para evitar problemas en móviles que la dejan pegada) */
 
 /* Estado activo (toggle) para el botón - replica el hover */
 #menu-toggle.menu-active .bar-mid {
@@ -2206,8 +2195,6 @@ button.is-loading {
 }
 /*Sobre Nosotros*/
 /* --- SECCIÓN SOBRE MESAMAP --- */
-/* --- SECCIÓN SOBRE MESAMAP (GIRO TOTAL) --- */
-/* --- SECCIÓN SOBRE MESAMAP (VERSIÓN FLEX) --- */
 .about-dynamic {
     width: 100%;
     min-height: 100dvh;
@@ -2222,7 +2209,7 @@ button.is-loading {
 
     background: 
         linear-gradient(#050505fe, rgba(0, 0, 0, 0.85)),
-        url('../Imagenes/Gemini_Generated_Image_qnqpylqnqpylqnqp\ -\ copia.png'); 
+        url('../Imagenes/Gemini_Generated_Image_qnqpylqnqpylqnqp - copia.webp'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2993,7 +2980,7 @@ button.is-loading {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('..//Imagenes/[Animated]\ Cabin\ In\ the\ Forest\ FHD\ Rain.gif'); 
+    background-image: url('..//Imagenes/[Animated]\ Cabin\ In\ the\ Forest\ FHD\ Rain.webp'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
