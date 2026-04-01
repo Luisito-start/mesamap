@@ -1251,7 +1251,7 @@ function cerrarPanel(){
     panel.classList.remove('active-info-place'); // Oculta el panel con la clase CSS
     panel.classList.add('desactive-info-place'); // Asegura que el panel esté oculto
     overlayPanel.classList.remove('active'); // Oculta el overlay
-    desbloquearScrollFondo();
+    bloquearScrollFondo();
 }
 overlayPanel.addEventListener('click', cerrarPanel);
 
